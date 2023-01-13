@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Weather</title>
+    <link rel="stylesheet" href="/css/for_project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>project.</h1>
+            <a href="/index.html">home</a>
+        </header>
+        <main>
+            <div class="head-text">
+                <h3>Line Weather</h3>
+                <a href="https://github.com/namthip06/book-and-look"> <img src="/image/github.svg" alt="img-git"> </a>
+            </div>
+            <p>ใช้ python library requests และ BeautifulSoup ในการเขียน เริ่มจากการดึงข้อมูลจากเว็บไซต์ The Weather Channel จากนั้นจึงใช้ API line notify ในการส่งข้อมูลสภาพอากาศที่ได้มาเข้าไลน์</p>
+            <p>ขั้นแรกเริ่มจากการติดตั้ง requests, BeautifulSoup และ time รวมถึงตั้งค่า line notify ให้เรียบร้อบก่อนจะเข้าสู่ขั้นต่อไป</p>
+            <p>ขั้นที่สองคือการเริ่มทำ web scraping กับเว็บไซต์เป้าหมายอย่าง The Weather Channel และใช้ requests ในการดึงข้อมูลภายในหน้านั้นออกมา</p>
+            <p>ขั้นที่สามคือการใช้คำสั่ง .find เพื่อดึงข้อมูลต่างๆ  เช่น  อุณหภูมิ สภาพท้องฟ้า โดยการระบุ class หรือ id เช่น => .find('div', class_='CurrentConditions--primary--2DOqs') และถ้าหากข้อมูลมีหลายค่าจะต้องใช้ for loop เพื่อเก็บค่าทั้งหมดลงในตัวแปร list ที่สร้างเอาไว้</p>
+            <p>ขั้นที่สี่คือการส่งข้อมูลที่ได้ผ่าน line โดยการกำหนดรูปแบบของข้อมูล จากนั้นจึงส่งข้อมูลโดยใช้ฟังก์ชั่น line เป็นอันเสร็จสมบูรณ์</p>
+            <a href="https://weather.com/th-TH/weather/today/l/22396578e4d85e547ad393f260e37b5d99da89c0a07042eb54eacf3afc2200b8">The Weather Channel</a>
+            <img src="/img_project/5 (1).png" alt="img-project">
+            <img src="/img_project/5 (2).png" alt="img-project">
+            <img src="/img_project/5 (3).png" alt="img-project">
+        </main>
+    </div>
+</body>
+</html>

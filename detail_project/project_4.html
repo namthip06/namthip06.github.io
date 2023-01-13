@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Day</title>
+    <link rel="stylesheet" href="/css/for_project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>project.</h1>
+            <a href="/index.html">home</a>
+        </header>
+        <main>
+            <div class="head-text">
+                <h3>Tarot Day</h3>
+                <a href="https://github.com/namthip06/book-and-look"> <img src="/image/github.svg" alt="img-git"> </a>
+            </div>
+            <p>เป็นอีกหนึ่งโปรเจคที่ใช้ library tkinter ของ python มาสร้าง windows applications โดยสร้างเป็นเกมสุ่มไพ่สามใบ จากนั้นให้ผู้เล่นเล่าเรื่องใดก็ได้ที่เกี่ยวข้องกับไพ่สามใบนั้น โดยโปรแกรมนี้เป็นแค่เครื่องมือสุ่มไพ่เท่านั้น</p>
+            <p>โดยขั้นแรกคือการสร้าง ckass card ขึ้นมา และเก็บค่าไว้ 2 ค่า คือชื่อการ์ดและที่อยู่ของการ์ด (เพราะการที่จะแสดงผลรูปภาพของ tkinter นั้นจำเป็นต้องอ้างอิงถึงตำแหน่งของรูปภาพภาพในเครื่อง) รวมทั้งสิ้น 15 การ์ด</p>
+            <p>ขั้นที่สองคือการ์ดสร้าง list การ์ดขึ้นมา จากนั้นเขียนฟังก์ชั่น random card โดยใช้ random.choice(list_card) และตั้งเงื่อนไขด้วย while loop ว่าถ้าการ์ดที่ได้ซ้ำกันให้ทำการสุ่มใหม่อีกครั้ง</p>
+            <p>ขั้นตอนสุดท้ายคือการสร้างตัวแปรเพื่ออ้างอิงที่อยู่ของการ์ดเข้ากับหน้าต่างแสดงผล => card_tuple[1].location อย่างแรกเพราะการ์ดใช้ฟังก์ชั้นท ramdom card จะคืนค่าออกมาเป็น list จึงจำเป็นต้องกำหนดเลข index เพื่ออ้างอิง อย่างที่สองคือการเรียนใช้ความสามารถของ class card เพื่อให้แสดงผลที่ตังของไฟล์รูปภาพนั้นๆออกม => file=relative_to_assets(card_tuple[1].location)) โดย relative_to_assets เป็นฟังก์ชั่นที่ใช้เข้าถึงโฟลเดอร์ที่เก็บไฟล์รูปภาพของโปรแกรม</p>
+            <a href="https://www.facebook.com/thaitonecolor">Thaitone</a>
+            <img src="/img_project/4 (1).png" alt="img-project">
+            <img src="/img_project/4 (2).png" alt="img-project">
+            <img src="/img_project/4 (3).png" alt="img-project">
+            <img src="/img_project/4 (4).png" alt="img-project">
+        </main>
+    </div>
+</body>
+</html>

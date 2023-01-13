@@ -83,7 +83,7 @@ main > img {
 }
 
 main > a {
-    width: min-content;
+    width: max-content;
     font-size: 25px;
     font-weight: bold;
     text-decoration: underline;

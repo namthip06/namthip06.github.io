@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <link rel="stylesheet" href="/css/for_project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>project.</h1>
+            <a href="/index.html">home</a>
+        </header>
+        <main>
+            <div class="head-text">
+                <h3>Color Flipper</h3>
+                <a href="https://github.com/namthip06/book-and-look"> <img src="/image/github.svg" alt="img-git"> </a>
+            </div>
+            <p>เขียนโดยใช้ css html และ javascript โดยสุ่มสีจากรหัส Hex color ประกอบไปด้วยตัวเลข 1-9 และตัวหนังสือ A-F จากนั้นจึงเปลี่ยนสีพื้นหลังตามสีที่สุ่มได้</p>
+            <p>โดยเริ่มจากการสร้างไฟล์ javascript ขึ้นมาก่อน โดยสร้าง list => [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'] ซึ่งเป็นค่าตัวแปรทั้งหมดในรหัสสีแบบ hex code ต่อมาจึงสร้างฟังก์ชั่นสำหรับการสุ่มรหัสสี โดยสร้าง string ขึ้นมาตัวนึงก่อน => hexcolor = '#' จากนั้นจึงค่อยๆบวกเพิ่มตามค่าที่สุ่มได้ โดยใช้ for loop ทั้งหมด 6 รอบ ต่อมาจึงนำค่าที่ได้ไปแสดงผลใน html ผ่าน getElementById และ querySelector </p>
+            <a href="#">Test it!</a>
+            <img src="/img_project/6 (1).png" alt="img-project">
+            <img src="/img_project/6 (2).png" alt="img-project">
+            <img src="/img_project/6 (3).png" alt="img-project">
+            <img src="/img_project/6 (4).png" alt="img-project">
+            <img src="/img_project/6 (5).png" alt="img-project">
+            <img src="/img_project/6 (6).png" alt="img-project">
+        </main>
+    </div>
+</body>
+</html>
