@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+body {
+    background: #FDF9F0;
+}
+
+/*main*/
+
+.container {
+    width: 70%;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 100px;
+}
+
+header > * {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header > a {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.head-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 100px 0;
+}
+
+.head-text > h3 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main > p {
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+main > img {
+    width: 80%;
+    margin: 100px auto 0 auto;
+    border: 2px solid black;
+}
+
+main > a {
+    width: min-content;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+}

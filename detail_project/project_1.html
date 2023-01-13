@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book&Look</title>
+    <link rel="stylesheet" href="/css/for_project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>project.</h1>
+            <a href="/index.html">back home</a>
+        </header>
+        <main>
+            <div class="head-text">
+                <h3>Book&Look</h3>
+                <a href="https://github.com/namthip06/book-and-look"> <img src="/image/github.svg" alt="img-git"> </a>
+            </div>
+            <p>Book&Look เป็นโปรเจคที่เกิดจากความฝันที่อยากเปิดร้านขายหนังสือ บวกกับต้องการทำโครงงาน full Stack เพื่อเป็นผลงานรอบ portfolio จึงเกิดเว็บไซต์ขายหนังสือออนไลน์ภายใต้ชื่อ Book&Look ขึ้นมา</p>
+            <p>โดยเว็บไซต์นี้เขียนขึ้นมาโดยใช้ php เป็นหลัก เพื่อใช้เชื่อมต่อกับฐานข้อมูล mysql ซึ่งจะคอยเก็บข้อมูลต่างๆ เช่น ข้อมูลลูกค้า อยู่ที่ไหน ชื่ออะไร, รายละเอียดของหนังสือ, คำสั่งซื้อของลูกค้า โดยคำสั่งซื้อนั้นจะแบ่งออกเป็น 2 colum หลักๆ ได้แก่ order ซึ่งจะเป็นคำสั่งซื้อหลัก ว่าสั่งซื้อสินค้ากี่ชนิด โดยที่ไม่ขึ้นกับปริมาณการสั่งซื้อ, order_item คือรายละเอียดของคำสั่งซื้อสินค้าแบบชิ้นต่อชิ้น เช่น สั่งซื้อเป็นจำนวนกี่ชิ้น รหัสของหนังสือที่สั่งซื้อมีค่าเท่าไหร่</p>
+            <p>หมวดหมู่ของหนังสือภายในเว็บไซต์เขียนด้วยภาษา mysql โดยใช้ ORDER BY ในการจัดเรียงข้อมูลตามเงื่อนไขต่างๆ เช่น Best Seller, New Arrivals และใช้ for loop ในการดึงข้อมูล 4 อันแรกออกมา</p>
+            <p>ระบบ login, sign up เขียนโดยใช้ Sessions ในการส่งข้อมูลผ่านหน้าเว็บ เช่น error และใช้ if ในการเช็คเงื่อนไข ใช้ method post รับค่า</p>
+            <p>ระบบตะกร้าสินค้า ใช้ array ในการจัดเก็บตัวเลือกสินค้า และใช้ Session ในการส่งข้อมูล จากนั้นเมื่อผู้ใช้ทำการยืนยันรายการสินค้าแล้ว ข้อมูลคำสั่งซื้อก็จะถูกเก็บไว้ใน mysql</p>
+            <a href="https://www.figma.com/file/0gPbKahyVti7zudXaMpo8d/Book%26Look?node-id=0%3A1&t=A0EvZz1tTgFh40bn-1">Figma</a>
+            <img src="/img_project/1 (1).png" alt="img-project">
+            <img src="/img_project/1 (2).png" alt="img-project">
+            <img src="/img_project/1 (3).png" alt="img-project">
+            <img src="/img_project/1 (4).png" alt="img-project">
+            <img src="/img_project/1 (5).png" alt="img-project">
+            <img src="/img_project/1 (7).png" alt="img-project">
+            <img src="/img_project/1 (6).png" alt="img-project">
+        </main>
+    </div>
+</body>
+</html>
